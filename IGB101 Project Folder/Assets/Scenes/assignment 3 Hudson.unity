@@ -6366,6 +6366,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2664611327364787940, guid: 93f9404c50dfbe740b51121fba63271d, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'Root'\n\tTransform 'Right_Shoulder_Joint_01'\n\tTransform
+        'Right_Upper_Arm_Joint_01'\n\tTransform 'Right_Ankle_Joint_01'\n\tTransform
+        'Right_Thigh_Joint_01'\n\tTransform 'Right_Wrist_Joint_01'\n\tTransform 'Left_Shoulder_Joint_01'\n\tTransform
+        'Left_Wrist_Joint_01'\n\tTransform 'Neck'\n\tTransform 'Left_Ankle_Joint_01'\n\tand
+        more ...\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     - target: {fileID: 2664611327373836644, guid: 93f9404c50dfbe740b51121fba63271d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -16048,7 +16058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2133845638}
   currentPickups: 0
-  maxPickups: 5
+  maxPickups: 7
   levelComplete: 0
   pickupText: {fileID: 655883230}
   audioSources: []

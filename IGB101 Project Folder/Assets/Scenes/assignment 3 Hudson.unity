@@ -497,9 +497,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 207142006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22de7eefa295b704d8c87a5a3b42617e, type: 3}
+  m_Script: {fileID: 11500000, guid: 92030fbf29b4f7247969d93706aa747f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
+  volume: 1
+  minPitch: 0.99
+  maxPitch: 1.01
 --- !u!1 &234964325 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2803117736667321908, guid: eab833f76fcf7944eb55bc476a3b204d, type: 3}
@@ -701,9 +705,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 274086515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22de7eefa295b704d8c87a5a3b42617e, type: 3}
+  m_Script: {fileID: 11500000, guid: 92030fbf29b4f7247969d93706aa747f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
+  volume: 1
+  minPitch: 0.99
+  maxPitch: 1.01
 --- !u!65 &274086518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -872,7 +880,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95970b68341c36c4caaf24460ddbd2ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 71263d0e00a0f6b47895d34bfaf37383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cameraNodes:
@@ -883,16 +891,10 @@ MonoBehaviour:
   - {fileID: 198659556}
   - {fileID: 2003751180}
   - {fileID: 892190127}
-  objects:
-  - {fileID: 207142006}
-  - {fileID: 1558227242}
-  - {fileID: 532495879}
-  - {fileID: 1984733825}
-  - {fileID: 1988003626}
-  - {fileID: 512462549}
-  - {fileID: 1706700959}
+  objects: []
   moveSpeed: 5
   rotSpeed: 5
+  loop: 0
 --- !u!1 &343683504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,14 +1513,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 512462549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22de7eefa295b704d8c87a5a3b42617e, type: 3}
+  m_Script: {fileID: 11500000, guid: 92030fbf29b4f7247969d93706aa747f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &532495879 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 5ba094864e47b6844babb67dcface057, type: 3}
-  m_PrefabInstance: {fileID: 417512094}
-  m_PrefabAsset: {fileID: 0}
+  clip: {fileID: 0}
+  volume: 1
+  minPitch: 0.99
+  maxPitch: 1.01
 --- !u!4 &532495880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5ba094864e47b6844babb67dcface057, type: 3}
@@ -7296,13 +7297,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a22c0c7e17126fa4f89534dc98bcac8f, type: 3}
---- !u!43 &1122884994
+--- !u!43 &1132506488
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-132918(Clone)(Clone)
+  m_Name: pb_Mesh-132918(Clone)(Clone)(Clone)(Clone)
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -12389,7 +12390,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1122884994}
+  m_Mesh: {fileID: 1132506488}
 --- !u!33 &1258461451
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -12397,7 +12398,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258461449}
-  m_Mesh: {fileID: 1122884994}
+  m_Mesh: {fileID: 1132506488}
 --- !u!23 &1258461452
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15660,7 +15661,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
-  m_Mesh: {fileID: 1122884994}
+  m_Mesh: {fileID: 1132506488}
   m_VersionIndex: 587
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -15693,6 +15694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44038118ed83484ab60daa3e7732a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openProximity: 2
 --- !u!111 &1258461457
 Animation:
   m_ObjectHideFlags: 0
@@ -15885,7 +15887,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1387872116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87312c7dcacf3654fa9236cc3f62dc2d, type: 3}
+  m_Script: {fileID: 11500000, guid: b73a6aa67c10c0343a89994c8938d7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CameraTarget: {fileID: 2133845639}
@@ -16041,18 +16043,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1419735638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 331924e26236e424ba23698a6a7db406, type: 3}
+  m_Script: {fileID: 11500000, guid: 0eb284c47698fb242b612f270544febd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2133845638}
   currentPickups: 0
-  maxPickups: 7
+  maxPickups: 5
   levelComplete: 0
   pickupText: {fileID: 655883230}
-  audioSources:
-  - {fileID: 261312748}
-  - {fileID: 821157879}
+  audioSources: []
   audioProximity: 5
+  levelCompleteSFX: {fileID: 0}
 --- !u!4 &1419735640
 Transform:
   m_ObjectHideFlags: 0
@@ -21138,9 +21139,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1558227242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22de7eefa295b704d8c87a5a3b42617e, type: 3}
+  m_Script: {fileID: 11500000, guid: 92030fbf29b4f7247969d93706aa747f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
+  volume: 1
+  minPitch: 0.99
+  maxPitch: 1.01
 --- !u!65 &1558227249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21424,11 +21429,6 @@ Transform:
   - {fileID: 892190128}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1706700959 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000012087368230, guid: a22c0c7e17126fa4f89534dc98bcac8f, type: 3}
-  m_PrefabInstance: {fileID: 1021911461}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1706700960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011716061034, guid: a22c0c7e17126fa4f89534dc98bcac8f, type: 3}
@@ -21604,9 +21604,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1776798836}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22de7eefa295b704d8c87a5a3b42617e, type: 3}
+  m_Script: {fileID: 11500000, guid: 92030fbf29b4f7247969d93706aa747f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
+  volume: 1
+  minPitch: 0.99
+  maxPitch: 1.01
 --- !u!65 &1776798842
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21674,9 +21678,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1843003702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22de7eefa295b704d8c87a5a3b42617e, type: 3}
+  m_Script: {fileID: 11500000, guid: 92030fbf29b4f7247969d93706aa747f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
+  volume: 1
+  minPitch: 0.99
+  maxPitch: 1.01
 --- !u!136 &1843003705
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21818,10 +21826,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1923220113}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 339f79b6cba14e341a1be279e797cbb4, type: 3}
+  m_Script: {fileID: 11500000, guid: 83ae7e41932c3284d8ca5eee093a301e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: SampleScene
+  nextLevel: Assignment 3 Jacob
 --- !u!1001 &1926617871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21909,9 +21917,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1984733825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22de7eefa295b704d8c87a5a3b42617e, type: 3}
+  m_Script: {fileID: 11500000, guid: 92030fbf29b4f7247969d93706aa747f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
+  volume: 1
+  minPitch: 0.99
+  maxPitch: 1.01
 --- !u!65 &1984733828
 BoxCollider:
   m_ObjectHideFlags: 0

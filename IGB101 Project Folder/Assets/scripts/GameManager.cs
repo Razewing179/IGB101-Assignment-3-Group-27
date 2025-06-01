@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
 
     // Level Complete SFX
     public AudioClip levelCompleteSFX;
+    public float completeSFXVolume = 0.4f;
+    public float completeSFXPitch = 1.0f;
     private bool completeSFXPlayed = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -51,7 +53,7 @@ public class GameManager : MonoBehaviour
 
         if (levelComplete && !completeSFXPlayed && levelCompleteSFX != null)
         {
-            PlayAudioClip(levelCompleteSFX, 0.5f, 1.0f);
+            PlayAudioClip(levelCompleteSFX, completeSFXVolume, completeSFXPitch);
             completeSFXPlayed = true;
         } 
     }

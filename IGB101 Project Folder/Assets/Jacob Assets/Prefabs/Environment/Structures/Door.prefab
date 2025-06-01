@@ -2174,6 +2174,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbc6cecf3d4f94549acfcf9daf635b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openProximity: 2
+  openSFX: {fileID: 8300000, guid: fe2cfaba8eccb7048be11d05a42ec273, type: 3}
+  GUIEvent: {fileID: 0}
 --- !u!1 &5325350776364762750
 GameObject:
   m_ObjectHideFlags: 0

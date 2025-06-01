@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/assignment 3 BenL.unity
     guid: 5565c03f6b5ed8440b275c84b47f5f85
+  - enabled: 1
+    path: Assets/Scenes/Assignment 3 Bailey.unity
+    guid: a4f0e80c0ed5ee54caf3714a6c360a00
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

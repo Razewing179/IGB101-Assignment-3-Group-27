@@ -19,11 +19,6 @@ public class PlayerMovement : MonoBehaviour{
         ForwardMovement();
 
         Turning();
-
-        Actions();
-
-        Punch();
-
     }
 
     private void ForwardMovement(){
@@ -51,27 +46,5 @@ public class PlayerMovement : MonoBehaviour{
             anim.SetBool("Turn Left", false);
             anim.SetBool("Turn Right", false);
         }
-    }
-
-    private void Actions(){
-        if(Input.GetKeyDown("e")){
-            anim.SetBool("Waving", true);
-        } else if(Input.GetKeyUp("e")){
-            anim.SetBool("Waving", false);
-        }
-
-    }
-
-    private void Punch()
-    {
-        if (Input.GetKeyDown("f"))
-        {
-            anim.SetBool("Punching", true);
-        }
-        else if (Input.GetKeyUp("f"))
-        {
-            anim.SetBool("Punching", false);
-        }
-
     }
 }

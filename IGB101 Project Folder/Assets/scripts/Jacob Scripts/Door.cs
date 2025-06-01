@@ -4,6 +4,8 @@ public class Door : MonoBehaviour
 {
     public float openProximity = 2.0f;
     public AudioClip openSFX;
+    public float SFXVolume = 1.0f;
+    public float SFXPitch = 1.0f;
 
     public GUIEvent GUIEvent;
 
@@ -29,6 +31,7 @@ public class Door : MonoBehaviour
             if (Input.GetKeyDown("f"))
             {
                 anim.Play();
+                if (openSFX != null) GameManager.Instance.PlayAudioClip(openSFX, SFXVolume, SFXPitch);
                 isOpen = true;
             }
         }

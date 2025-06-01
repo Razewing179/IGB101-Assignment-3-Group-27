@@ -6,10 +6,10 @@ public class End : MonoBehaviour
 {
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
+        //if(Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    Application.Quit();
+        //}
     }
 
     private void OnTriggerEnter(Collider other)
